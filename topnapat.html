@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+ <html>
+  <head> 
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	 <title>Facebook</title> 
+  	<style type="text/css">
+  	  html, body { 
+        margin: 0px;
+  	    padding: 0px;
+  	    border: 0px; 
+      } 
+      	
+    	.headerDiv{
+      		position: absolute;
+      		top: 0px;
+      		left: 0px;
+      		width: 100%;
+      		height: 50px;
+      		background-color:#FFCC99 ;
+      		font-size: 30px;
+		}
+		
+		.mainDiv{
+			position: absolute;
+			top: 50px ;
+			left: 0px ;
+			width: 100%;
+			height: 100%;
+			background-color:#80664C ;
+
+		}
+			.submainleftDiv{
+				position: absolute;
+				top:0px;
+				left:0px;
+				width:50%;
+				height:85%;
+				background-color:#FF3333 ;
+			}
+				.detaillefttopDiv {
+					position: absolute;
+					top:2%;
+					left:3%;
+					width:95%;
+					height:45%;
+					background-color:#663300 ;
+				}
+					.insideDlefttopDiv img{
+						position: absolute;
+						top:2%;
+						left:2%;
+						width:95%;
+						height:95%;
+						background-color:#FFFFFF;
+					}
+				.detialleftbottomDiv{
+					position: absolute;
+					top:49%;
+					left:3%;
+					width:95%;
+					height:50%;
+					background-color:#D68533 ;
+				}
+					.insidelDleftbottomDiv{
+						position: absolute;
+						top:2%;
+						left:2%;
+						width:95%;
+						height:95%;
+						
+					}
+			.submainrightDiv{
+				position: absolute;
+				top:0px;
+				left:50%;
+				width:50%;
+				height:85%;
+				background-color:#2EB82E ;
+			}
+				.righttopDiv{
+					position: absolute;
+					top:15px;
+					left:2%;
+					width:95%;
+					height:30%;
+					background-color: #52CC7A;
+				}
+					.detailrighttopDiv{
+						position: absolute;
+						top:2%;
+						left:2%;
+						width:97%;
+						background-color:#00B88A;
+						font-family: "Tahoma", Georgia, Serif;
+						font-size: 14px;
+					}
+				.rightmiddleDiv{
+					position: absolute;
+					top:240px;
+					left:2%;
+					width:95%;
+					height:30%;
+					background-color: #00CCFF;
+				}
+					.detailrightmiddleDiv{
+						position: absolute;
+						top:5px;
+						left:2%;
+						width:94%;
+						height:220px;
+						background-color:#008FB2 ;
+					}
+				.rightbottomDiv{
+					position: absolute;
+					top:490px;
+					left:2%;
+					width:95%;
+					height:37%;
+					background-color:#FFFFCC;
+				}
+					.detailrightbottomDiv{
+						position: absolute;
+						top:30px;
+						left:2%;
+						width:94%;
+						height:270px;
+						background-color:#FFFFFF ;
+					}
+						
+		.footerDiv{
+			font-size: 10px;
+			background-color: #FF9999;
+			width:100%;
+			height: 20px;
+		}
+		.ri img{
+			width:100%;
+			height:90%;
+			position: absolute;
+		}
+		.ra img{
+			width:100%;
+			height:90%;
+			position: absolute;
+		}
+
+      
+	</style>
+	 <style>
+
+
+
+      @charset "UTF-8";
+
+/* Base Styles */
+
+#cssmenu ul,
+
+#cssmenu li,
+
+#cssmenu a {
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  border: 0;
+
+  line-height: 1;
+
+  font-family: 'Lato', sans-serif;
+
+  z-index: 2;
+
+}
+
+#cssmenu {
+
+  border: 1px solid #133e40;
+
+  -webkit-border-radius: 5px;
+
+  -moz-border-radius: 5px;
+
+  -ms-border-radius: 5px;
+
+  -o-border-radius: 5px;
+
+  border-radius: 5px;
+
+  width: 100%;
+
+  position: absolute;
+
+  top: 10px;
+
+}
+
+#cssmenu ul {
+
+  zoom: 1;
+
+  background: #848484;
+
+  background: -moz-linear-gradient(top, #A4A4A4 0%, #424242 100%);
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #36b0b6), color-stop(100%, #2a8a8f));
+
+  background: -webkit-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+
+  background: -o-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+
+  background: -ms-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+
+  background: linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
+
+  padding: 5px 10px;
+
+  -webkit-border-radius: 5px;
+
+  -moz-border-radius: 5px;
+
+  -ms-border-radius: 5px;
+
+  -o-border-radius: 5px;
+
+  border-radius: 5px;
+
+}
+
+#cssmenu ul:before {
+
+  content: '';
+
+  display: block;
+
+}
+
+#cssmenu ul:after {
+
+  content: '';
+
+  display: table;
+
+  clear: both;
+
+}
+
+#cssmenu li {
+
+  float: left;
+
+  margin: 0 5px 0 0;
+
+  border: 1px solid transparent;
+
+}
+
+#cssmenu li a {
+
+  -webkit-border-radius: 5px;
+
+  -moz-border-radius: 5px;
+
+  -ms-border-radius: 5px;
+
+  -o-border-radius: 5px;
+
+  border-radius: 5px;
+
+  padding: 8px 15px 9px 15px;
+
+  display: block;
+
+  text-decoration: none;
+
+  color: #ffffff;
+
+  border: 1px solid transparent;
+
+  font-size: 16px;
+
+}
+
+#cssmenu li.active {
+
+  -webkit-border-radius: 5px;
+
+  -moz-border-radius: 5px;
+
+  -ms-border-radius: 5px;
+
+  -o-border-radius: 5px;
+
+  border-radius: 5px;
+
+  border: 1px solid ;
+
+}
+
+#cssmenu li.active a {
+
+  -webkit-border-radius: 5px;
+
+  -moz-border-radius: 5px;
+
+  -ms-border-radius: 5px;
+
+  -o-border-radius: 5px;
+
+  border-radius: 5px;
+
+  display: block;
+
+  background: #2E2E2E;
+
+  border: 1px solid ,black;
+
+}
+
+#cssmenu li:hover {
+
+  -webkit-border-radius: 5px;
+
+  -moz-border-radius: 5px;
+
+  -ms-border-radius: 5px;
+
+  -o-border-radius: 5px;
+
+  border-radius: 5px;
+
+  border: 1px solid, black;
+
+}
+
+#cssmenu li:hover a {
+
+  -webkit-border-radius: 5px;
+
+  -moz-border-radius: 5px;
+
+  -ms-border-radius: 5px;
+
+  -o-border-radius: 5px;
+
+  border-radius: 5px;
+
+  display: block;
+
+  background: #2E2E2E;
+
+}
+
+
+
+  </style>
+	<op/head>
+	<body>
+		<div id='cssmenu'>
+
+    <ul>
+
+        
+
+        <li><a href='ABCCCC (1).html'><span>PEAK</span></a></li>
+
+         <li><a href='topnapat.html'><span>TOP</span></a></li>
+
+
+    </ul>
+
+    </div>
+		
+				<div class="mainDiv">
+					<div class="submainleftDiv">
+						<div class="detaillefttopDiv">
+							<div class="insideDlefttopDiv">
+							<img src="C:/Users/acer/Desktop/IntroToIce work1/IMG_1708.JPG">
+							</div>
+						</div>
+						<div class="detialleftbottomDiv">
+							<div class= "insidelDleftbottomDiv"> 
+								<table width:850px>
+									<tr>
+										<td><div class ="ra"><img src="C:/Users/acer/Desktop/IntroToIce work1/IMG_2145.JPG" width:200px height:200px></div></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="submainrightDiv">
+						<div class="righttopDiv">
+							<div class="detailrighttopDiv">
+								<H1>General information: </H1>        
+        						<a>PHONE NO.:081-8169344<br>
+        							Napat Prasertwaree<br>
+        							Date/Place of birth: 23/April@Bangkok hospital<br>
+        							For more information<br>
+        							<a href="https://www.facebook.com/napat.prasertwaree">Link</a><br>
+
+       							
+							</div>
+						</div>
+						<div class="rightmiddleDiv">
+							<div class="detailrightmiddleDiv">
+								<div class="ri">
+									<img src="C:/Users/acer/Desktop/IntroToIce work1/DSC_9039.JPG" >
+								</div>
+							</div>
+						</div>
+						<div class="rightbottomDiv">
+							<div class="detailrightbottomDiv">
+								<div class="ra">
+									<img src="C:/Users/acer/Desktop/IntroToIce work1/IMG_2144.JPG" >
+
+								</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+		<div class="footerDiv">
+			
+		</div>
+
+</body>

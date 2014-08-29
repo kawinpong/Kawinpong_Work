@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+ <html>
+
+  <head> 
+
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  	 <title>FaceBook</title> 
+
+  	 <style type="text/css">
+
+  	  html, body { 
+
+        margin: 0px;
+
+  	    padding: 0px;
+
+  	    border: 0px; 
+
+      } 
+
+      .header{
+
+        position: absolute;
+
+        top: 0px;
+
+        left: 0px;
+
+        width: 100%;
+
+        height: 50px;
+
+        
+
+        z-index: -1;
+
+      }
+
+      .backgroundCover img{
+
+         position: absolute;
+
+        top: 50px;
+
+        left: 0px;
+
+        width: 100%;
+
+        height: 100%;
+
+        z-index: -1;
+
+      }
+
+      .peakImage img{
+
+        position: absolute;
+
+        top: 420px;
+
+        left: 40%;
+
+        width: 300px;
+
+        height:200px;
+
+        border-radius: 200px
+
+      }
+
+      .peakName{
+
+        position: absolute;
+
+        top: 300px;
+
+        left: 37%;
+
+        width: 1000px;
+
+        height: 1000px;
+
+        color: #FFFF00;
+
+        font-size:50px;
+
+        font-family: "Tahoma", Georgia, Serif;
+
+      }
+
+      .leftBox{
+
+        background-color:green;
+
+        position: absolute;
+
+        top: 100%;
+
+        left: 0%;
+
+        width: 33.333333333333333333333333333333333333333333%;
+
+        height: 680px;
+
+        font-family: "Tahoma", Georgia, Serif;
+
+      }
+
+      .centerBox {
+
+        position: absolute;
+
+        background-color: #FFFFCC;
+
+        top: 100%;
+
+        left: 33.333333333333333333333333333333333333333333%;
+
+        width: 33.333333333333333333333333333333333333333333%;
+
+        height: 680px;
+        font-family: "Tahoma", Georgia, Serif;
+
+      }
+
+      .centerboxPic{
+
+        
+
+        width:100%;
+
+        height:100%;
+
+      }
+
+      .rightBox {
+
+        position: absolute;
+
+        background-color: #ff6633;
+
+        top: 100%;
+
+        left: 66.6666666666666666666666666666666666666666666%;
+
+        width: 33.333333333333333333333333333333333333333333%;
+
+        height: 680px;
+        font-family: "Tahoma", Georgia, Serif;
+
+      }
+
+      .rightboxPic{
+
+        position: absolute;
+
+        top:0;
+
+        left:0;
+
+        height:100%;
+
+
+
+      }
+
+  </style> 
+
+  <style>
+
+
+
+      @charset "UTF-8";
+
+/* Base Styles */
+
+#cssmenu ul,
+
+#cssmenu li,
+
+#cssmenu a {
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  border: 0;
+
+  line-height: 1;
+
+  font-family: 'Lato', sans-serif;
+
+  z-index: 2;
+
+}
+
+#cssmenu {
+
+  border: 1px solid #133e40;
+
+  -webkit-border-radius: 5px;
+
+  -moz-border-radius: 5px;
+
+  -ms-border-radius: 5px;
+
+  -o-border-radius: 5px;
+
+  border-radius: 5px;
+
+  width: 100%;
+
+  position: absolute;
+
+  top: 10px;
+
+}
+
+#cssmenu ul {
+
+  zoom: 1;
+
+  background: #848484;
+
+  background: -moz-linear-gradient(top, #A4A4A4 0%, #424242 100%);
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #36b0b6), color-stop(100%, #2a8a8f));
+
+  background: -webkit-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+
+  background: -o-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+
+  background: -ms-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+
+  background: linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
+
+  padding: 5px 10px;
+
+  -webkit-border-radius: 5px;
+
+  -moz-border-radius: 5px;
+
+  -ms-border-radius: 5px;
+
+  -o-border-radius: 5px;
+
+  border-radius: 5px;
+
+}
+
+#cssmenu ul:before {
+
+  content: '';
+
+  display: block;
+
+}
+
+#cssmenu ul:after {
+
+  content: '';
+
+  display: table;
+
+  clear: both;
+
+}
+
+#cssmenu li {
+
+  float: left;
+
+  margin: 0 5px 0 0;
+
+  border: 1px solid transparent;
+
+}
+
+#cssmenu li a {
+
+  -webkit-border-radius: 5px;
+
+  -moz-border-radius: 5px;
+
+  -ms-border-radius: 5px;
+
+  -o-border-radius: 5px;
+
+  border-radius: 5px;
+
+  padding: 8px 15px 9px 15px;
+
+  display: block;
+
+  text-decoration: none;
+
+  color: #ffffff;
+
+  border: 1px solid transparent;
+
+  font-size: 16px;
+
+}
+
+#cssmenu li.active {
+
+  -webkit-border-radius: 5px;
+
+  -moz-border-radius: 5px;
+
+  -ms-border-radius: 5px;
+
+  -o-border-radius: 5px;
+
+  border-radius: 5px;
+
+  border: 1px solid ;
+
+}
+
+#cssmenu li.active a {
+
+  -webkit-border-radius: 5px;
+
+  -moz-border-radius: 5px;
+
+  -ms-border-radius: 5px;
+
+  -o-border-radius: 5px;
+
+  border-radius: 5px;
+
+  display: block;
+
+  background: #2E2E2E;
+
+  border: 1px solid ,black;
+
+}
+
+#cssmenu li:hover {
+
+  -webkit-border-radius: 5px;
+
+  -moz-border-radius: 5px;
+
+  -ms-border-radius: 5px;
+
+  -o-border-radius: 5px;
+
+  border-radius: 5px;
+
+  border: 1px solid, black;
+
+}
+
+#cssmenu li:hover a {
+
+  -webkit-border-radius: 5px;
+
+  -moz-border-radius: 5px;
+
+  -ms-border-radius: 5px;
+
+  -o-border-radius: 5px;
+
+  border-radius: 5px;
+
+  display: block;
+
+  background: #2E2E2E;
+
+}
+
+
+
+  </style>
+
+<op/head>  
+
+<body>
+
+    <div id='cssmenu'>
+
+    <ul>
+
+       
+
+        <li><a href='ABCCCC (1).html'><span>PEAK</span></a></li>
+
+         <li><a href='topnapat.html'><span>TOP</span></a></li>
+
+        
+
+    </ul>
+
+    </div>
+
+
+
+
+
+
+
+  <div class="backgroundCover">
+
+    <img src="C:/Users/acer/Desktop/IntroToIce work1//Maldives-Sky-Sea-Aquamarine-Water-X-395769.jpg">
+
+  </div>
+
+  <div class ="header">
+
+    <h1>My Header Row</h1>
+
+    <div class="peakImage">
+
+      <img src="C:/Users/acer/Desktop/IntroToIce work1//IMG_2119.JPG">
+
+    </div>
+
+    <div class="peakName">
+
+      PEAK KAWINPONG
+
+    </div>
+
+  </div>
+
+  <div class="leftBox">
+
+    <H1>General information </H1>        
+        <button>
+        <a>PHONE NO.:098-375-4505<br>
+
+        E-MAIL: Peak41014@gmail.com<br>
+
+        Date/Place of birth: 11/August@ Paulo memorial hospital</a>
+        </button>
+
+    <H1>Background education</H1>
+        <button>
+        <a>Kindergarten-Primary6: UDOMSUKSA SCHOOL<br>
+
+        Highschool: SAMSENWITTAYALAI SCHOOL<br>
+
+        University: FACULTY OF ENGINEERING, CHULALONGKORN UNIVERSITY</a>
+        </button>
+
+    <H1>Hobby & Favourite sports/song/games</H1>
+        <button>
+        <a>Hobby: Watch soccer, Play games, modify bicycle<br>
+
+        Favourite sports: soccer, tennis, cycling <br>
+
+        Favourite song: Counting stars-One republic</br>
+
+        Favourite games: Fifa14</a>
+        </button>
+
+  </div>
+
+  <div class="centerBox">
+
+    <div class="centerboxPic">
+      <H1>My Friend </H1>
+
+      <table width=621px>
+
+        <tr>
+
+          <td><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/c49.49.618.618/s200x200/935769_137361926465571_2120833748_n.jpg?oh=f0009a5f3bad1b1be88155cd37d2e0d0&oe=547F4DA6&__gda__=1417022066_91c703bb7614669ba28bd7ebcfcdd168" width=207px lenght=207px></td>
+
+          <td><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/t1.0-1/p200x200/1925020_10151861124412574_1969489618_n.jpg" width=207px lenght=207px></td>
+
+          <td><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/c0.0.200.200/p200x200/10347072_301991529959418_7985459612314407455_n.jpg?oh=4bd3f2e24d243016659312bc65ffd1fe&oe=545DE95C&__gda__=1417427342_acbac4510501682d655f5de441dfbfc2" width=207px lenght=207px></td>
+
+        </tr>
+
+        <tr>
+
+          <td><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/t1.0-1/c43.43.535.535/s200x200/217682_503245786357579_315366577_n.jpg" width=207px lenght=207px></td>
+
+          <td><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/p200x200/1794665_669352563124149_407774675_n.jpg?oh=4c99426fdc047c40a53e2f4ebac5ba55&oe=546A3B7B&__gda__=1417072851_b01ceef6a95cb1ce07c97fd0dad7b756" width=207px lenght=207px></td>
+
+          <td><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/t1.0-1/c0.52.200.200/p200x200/10403499_714260798637216_8489802992809104439_n.jpg" width=207px lenght=207px></td>
+
+        </tr>
+
+        <tr>
+
+          <td><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t1.0-1/c278.30.381.381/s200x200/551300_4854516367534_1028118116_n.jpg" width=207px lenght=207px></td>
+
+          <td><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/p200x200/998546_10202520030988904_609331384_n.jpg?oh=43761f6e6480ef10c83fa78182b35749&oe=54671827&__gda__=1417447858_4b7b37bedccd412040476fd7c8178024" width=207px lenght=207px></td>
+
+          <td><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/p200x200/10297883_274400302732871_7035965387442652559_n.jpg?oh=1dcb49bfa67748724b210ec06d24f7e6&oe=546ED573&__gda__=1416254970_25b4ac4855fcbd86f6d70049f35ee7de" width=207px lenght=207px></td>
+
+        </tr>
+
+      </table>
+
+
+
+    </div>
+
+
+
+  </div>
+
+  <div class="rightBox">
+
+    <div class="rightboxPic">
+      <H1>My Gallery</H1>
+
+      <img src="C:/Users/acer/Desktop/IntroToIce work1/topguIntro2.png">
+
+    </div>
+
+  </div>
+
+
+
+
+
+</body>
